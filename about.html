@@ -29,25 +29,100 @@
     <h1>About Bloom</h1>
     <p>Bloom Beauty Salon opened in 2018 with a mission to provide high-quality beauty services in a cozy environment. Our artists are trained professionals and use premium products.</p>
 
-    <section class="team-grid">
+    <section class="team-grid fade-in">
       <h2>Our Team</h2>
       <div class="grid">
-        <div class="team-card">
+        <div class="team-card fade-in">
           <h4>Alina</h4>
           <p>Senior stylist — hair & color</p>
+          <div class="specialist-rating">★★★★☆ 4.8/5</div>
         </div>
-        <div class="team-card">
+        <div class="team-card fade-in">
           <h4>Sara</h4>
           <p>Nail artist — gel design</p>
+          <div class="specialist-rating">★★★★★ 5.0/5</div>
         </div>
-        <div class="team-card">
+        <div class="team-card fade-in">
           <h4>Madina</h4>
           <p>Beauty therapist — spa & facial</p>
+          <div class="specialist-rating">★★★★☆ 4.7/5</div>
         </div>
       </div>
     </section>
 
-    <section class="philosophy">
+    <!-- Новый раздел с каруселью отзывов -->
+    <section class="testimonials-section fade-in">
+      <h2>Client Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <!-- Отзыв 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"Alina transformed my hair! I've never received so many compliments. She's a true color artist!"</p>
+              <div class="client-info">
+                <strong>Aigerim</strong>
+                <span>Hair Coloring</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Отзыв 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"Sara's nail art is incredible! She captured exactly what I wanted. My nails looked perfect for 3 weeks!"</p>
+              <div class="client-info">
+                <strong>Madina</strong>
+                <span>Gel Nails</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Отзыв 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="stars">★★★★☆</div>
+              <p class="testimonial-text">"Madina's facial treatment was so relaxing. My skin felt rejuvenated and looked glowing for days!"</p>
+              <div class="client-info">
+                <strong>Zhanar</strong>
+                <span>Facial Spa</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Отзыв 4 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"The entire team at Bloom is fantastic. Professional, friendly, and always amazing results!"</p>
+              <div class="client-info">
+                <strong>Asel</strong>
+                <span>Regular Client</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="philosophy fade-in">
       <h2>Our Philosophy</h2>
       <p>We combine modern trends with personalized care — beauty that makes you feel confident.</p>
     </section>
@@ -60,7 +135,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
